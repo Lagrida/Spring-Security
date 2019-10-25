@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layout">
+<head>
+<title>Spring Security - Lagrida</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" />
+<link rel="stylesheet" th:href="@{/styles/style.css}" />
+</head>
+<body>
+	<div class="containner">
+		<div th:replace="header::header"></div>
+		<div class="well">Page accessible par Tous le monde</div>
+		<h3><i class="fas fa-users"></i> les utilisateurs:</h3>
+		<div class="btm"></div>
+		<a href="/superAdmin"><i class="fas fa-sign-in-alt"></i> Superadmin</a>
+		<pre>
+			Role autorisé: superAdministrateur
+			username: lagrida
+			password: 123456
+		</pre>
+		<div class="btm"></div>
+		<a href="/admin"><i class="fas fa-sign-in-alt"></i> Admin</a>
+		<pre>
+			Roles autorisés: superAdministrateur, Admin
+			username: user1
+			password: 123456
+		</pre>
+		<div class="btm"></div>
+		<a href="/user"><i class="fas fa-sign-in-alt"></i> User</a>
+		<pre>
+			Roles autorisés: superAdministrateur, Admin, user
+			username: user2
+			password: 123456
+		</pre>
+		<div class="btm"></div>
+	</div>
+	
+</body>
+</html>

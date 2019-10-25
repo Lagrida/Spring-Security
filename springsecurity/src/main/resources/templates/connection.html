@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>connection</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+
+</style>
+</head>
+<body>
+	<div th:fragment="connect" style="float:right">
+		Bienvenue : <span th:text="${userConnected.username}" style="font-weight: bold; color:blue"></span>
+		<th:block th:if="${userConnected.id > 0}">
+		 , <a th:href="@{/logout}" style="color:#C00000">Déconnexion</a>
+		</th:block>
+	</div>
+</body>
+</html>

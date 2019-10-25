@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layout">
+<head>
+<title>Spring Security - Lagrida</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" />
+<link rel="stylesheet" th:href="@{/styles/style.css}" />
+</head>
+<body>
+	<div class="containner">
+		<div th:replace="header::header"></div>
+		<div class="well">
+			<h2 style="color:green"><i class="fas fa-check-square"></i> Welcome</h2>
+			Page n'est accessible que par les utilisateurs ayant le role <b>superAdmin</b> ou <b>admin</b> ou <b>user</b>.</div>
+	</div>
+</body>
+</html>

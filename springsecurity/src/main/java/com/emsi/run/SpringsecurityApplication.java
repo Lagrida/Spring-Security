@@ -24,7 +24,7 @@ public class SpringsecurityApplication {
 		 * Le block suivant sert à ajouter 3 roles et 3 users
 		 * Après le premier lancement, commenter depuis "Debut" jusqu'aux "Fin"
 		*/
-		/*
+		
 		// Debut
 		Role rl1, rl2, rl3;
 		UserRepository userRepository = context.getBean(UserRepository.class);
@@ -66,6 +66,6 @@ public class SpringsecurityApplication {
 			
 		}
 		// Fin
-		*/
+		
 	}
 }
